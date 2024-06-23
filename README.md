@@ -48,7 +48,14 @@ into a function if it's not passed in explicitly.  Kinda acts like a default arg
     >>> @injects.ctx(session=create_session)
     ... async def do_something(session=None):
     ...     await session.execute(...)
+
     >>> asyncio.run(do_something())
+
+    OR if you already have a session
+
+    >>> my_session = ...
+    >>> asyncio.run(do_something(my_session))
+
 
 ## Composition
 
