@@ -43,6 +43,13 @@ into a function if it's not passed in explicitly.  Kinda acts like a default arg
     >>> foo()
     7
 
+### More examples
+
+    >>> @injects.ctx(session=create_session)
+    ... async def do_something(session=None):
+    ...     await session.execute(...)
+    >>> asyncio.run(do_something())
+
 ## Composition
 
 Again look at docstrings for base use-cases.  You can re-compose an argument passed in
