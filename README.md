@@ -8,6 +8,10 @@ surprising useful for my projects.  Some of the things I've used them for:
 2. Supersede `contextlib.contextmanager` to fetch return value
 3. Dealing with async calls inside a sync-style system
 
+One important thing to note, these decorators do not change the signature of the wrapped
+function.  That is, the signature will still be the same even though arguments are
+effectively defaulted and/or modified just be fn is entered.
+
 ## Injection
 
 Look at the docstrings for basic use-cases.  Basically, you can inject and argument
