@@ -10,7 +10,7 @@ surprising useful for my projects.  Some of the things I've used them for:
 
 One important thing to note, these decorators do not change the signature of the wrapped
 function.  That is, the signature will still be the same even though arguments are
-effectively defaulted and/or modified just be fn is entered.
+effectively defaulted and/or modified just before the function is entered.
 
 ## Injection
 
